@@ -1,0 +1,24 @@
+Design document(ish)
+
+Century Club rules:
+
+Drinking marathon game where you drink an ounce of beer every minute for 100 minutes
+
+Idea: 
+
+Every 60 seconds for 100 minutes, play a soundeffect at random from a collection
+(maybe add requests here too) to indicate the time to take a drink. between each minute marker,
+play a song at random from a collection of songs, and starting at a random timestamp.
+
+Using a small django frontend with just an input bar and a "go" button, allow players to request songs and
+sound effects. Front end will report errors to user after submission (already in queue, already played,
+bad url ect) or a success screen if successful.
+
+After a quick google, it looks like the pafy library would be the best option for us. It streams youtube 
+videos in vlc, and this makes my old code able to morph easily to fit this.
+
+Old version's idea:
+
+The old version's (2016/2017 NYE) used a collection of songs and soundeffects manually downloaded and played
+on vlc player
+
