@@ -1,5 +1,7 @@
-__author__ = 'Mike'
+""" Place all globals here.
 
+    FUTURE: create these globals from a json or cli input
+"""
 
 import os.path
 
